@@ -2,7 +2,7 @@ import 'package:app_food/animation/FadeAnimation.dart';
 import 'package:app_food/screens/home/home_screen.dart';
 import 'package:app_food/screens/home/popular/home_popular_screen.dart';
 import 'package:app_food/utils/constants.dart';
-import 'package:commons/commons.dart';
+import 'package:rflutter_alert/rflutter_alert.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:ui';
@@ -172,7 +172,22 @@ class _LoginScreenState extends State<LoginScreen> {
                                       builder: (context) =>
                                           PopularHomeScreen()));
                             } else {
-                              warningDialog(context, "Warning demo dialog");
+                              Alert(
+                                context: context,
+                                type: AlertType.warning,
+                                title: "An Error Occurred",
+                                desc: " ",
+                                buttons: [
+                                  DialogButton(
+                                    child: Text(
+                                      "确定",
+                                      style: TextStyle(color: Colors.white, fontSize: 20),
+                                    ),
+                                    onPressed: () => Navigator.pop(context),
+                                    color: Color.fromRGBO(0, 179, 134, 1.0),
+                                  ),
+                                ],
+                              ).show();
                             }
                           },
                           child: Container(

@@ -329,11 +329,11 @@ class _PopularHomeScreenState extends State<PopularHomeScreen> {
             position: BadgePosition.topEnd(top: -15, end: -25),
             elevation: 0,
             shape: BadgeShape.circle,
-            badgeColor: DesignCourseAppTheme.nearlyWhite,
+            badgeColor: DesignCourseAppTheme.nearlyBlue,
             borderSide: BorderSide(color: DesignCourseAppTheme.nearlyBlue),
             badgeContent: Text(
               '12',
-              style: TextStyle(color: DesignCourseAppTheme.nearlyBlue),
+              style: TextStyle(color: DesignCourseAppTheme.nearlyWhite),
             ),
             animationType: BadgeAnimationType.fade,
             child: Container(

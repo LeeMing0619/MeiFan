@@ -42,7 +42,8 @@ dependencies:
   simple_animations: ^4.2.0
   badges: ^2.0.3
   http: ^0.13.4
-  commons: ^0.3.2
+  flutter_awesome_alert_box: ^2.1.1
+  rflutter_alert: ^2.0.4
 
 dev_dependencies:
   flutter_test:
